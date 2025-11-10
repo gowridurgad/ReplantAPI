@@ -23,4 +23,4 @@ jobs:
         with:
           name: Release
           path: |
-            ReplantAPI/bin/Release/net4.7.2-windows/win-x86
+            ReplantAPI/bin/Release/net4.7.2-windows/win-x64
