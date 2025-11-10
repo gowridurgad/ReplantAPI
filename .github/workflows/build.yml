@@ -11,12 +11,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Install .NET 8 SDK via Chocolatey
-        shell: pwsh
-        run: |
-          choco install netfx-4.7.2-devpack -y
-
+        
       - name: Restore NuGet Packages
         run: dotnet restore ReplantAPI.sln
 
