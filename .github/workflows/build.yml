@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
+      - name: Setup MSBuild Path
+        uses: microsoft/setup-msbuild@v2
         
       - name: Restore NuGet Packages
         run: dotnet restore ReplantAPI.sln
