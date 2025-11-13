@@ -19,7 +19,7 @@ jobs:
         run: dotnet restore ReplantAPI.sln
 
       - name: Build Project
-        run: msbuild  ReplantAPI.sln /p:Configuration=Release -v detailed  
+        run: msbuild  ReplantAPI.sln /p:Configuration=Release 
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
